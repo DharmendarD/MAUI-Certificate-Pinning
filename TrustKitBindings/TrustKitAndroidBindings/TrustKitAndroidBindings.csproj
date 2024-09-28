@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-android</TargetFramework>
+    <SupportedOSPlatformVersion>29</SupportedOSPlatformVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+	<OutputPath>bin</OutputPath>
+	<BaseOutputPath>bin</BaseOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Jars\trustKit-android-1.1.3.aar" />
+  </ItemGroup>
+</Project>

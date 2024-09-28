@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-ios</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>true</ImplicitUsings>
+    <IsBindingProject>true</IsBindingProject>
+	 <OutputPath>bin</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
+    <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<NativeReference Include="TrustKit.xcframework">
+			<Kind>Framework</Kind>
+			<ForceLoad>True</ForceLoad>
+			<SmartLink>False</SmartLink>
+			<Frameworks>Foundation Security CoreFoundation</Frameworks>
+			<LinkerFlags>-Objc</LinkerFlags>
+		</NativeReference>
+	</ItemGroup>
+	
+</Project>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="CertificatePinning.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Grid
+        Padding="30"
+        RowDefinitions="Auto,*,Auto"
+        RowSpacing="10">
+        <Label
+            Grid.Row="0"
+            FontAttributes="Bold"
+            FontSize="16"
+            Text="Sample certificate pinning app for google domain validation" />
+
+        <Label
+            x:Name="StatusLabel"
+            Grid.Row="1"
+            FontAttributes="Italic"
+            FontSize="16"
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
+            IsVisible="False"
+            Text="Failed to establish connection"
+            TextColor="Red"
+            VerticalOptions="Center" />
+
+        <WebView x:Name="SampleWebView" Grid.Row="1" />
+
+        <Button
+            x:Name="EstablishConnectionButton"
+            Grid.Row="2"
+            Clicked="EstablishConnectionClicked"
+            HorizontalOptions="Fill"
+            Text="Establish connection" />
+    </Grid>
+
+</ContentPage>

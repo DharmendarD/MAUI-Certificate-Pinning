@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+	<base-config cleartextTrafficPermitted="false" />
+	<domain-config cleartextTrafficPermitted="false">
+		<domain includeSubdomains="true">linkedin.com</domain>
+		<!-- Valid pins -->
+		<!-- Check if pins are expired and update latest pin here as well as in info plist -->
+		<pin-set>
+			<pin digest="SHA-256" expiration="2025-03-11">EHSd7ii9pLmC8hB+sB54aZjg3yPZz6vREeP0FIhjlvA=</pin>
+			<pin digest="SHA-256" expiration="2030-09-22">5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w=</pin>
+		</pin-set>
+		<trustkit-config enforcePinning="true">
+		</trustkit-config>
+	</domain-config>
+</network-security-config>

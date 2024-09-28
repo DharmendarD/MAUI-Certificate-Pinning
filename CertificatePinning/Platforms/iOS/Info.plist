@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>UIDeviceFamily</key>
+	<array>
+		<integer>1</integer>
+		<integer>2</integer>
+	</array>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>arm64</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>XSAppIconAssets</key>
+	<string>Assets.xcassets/appicon.appiconset</string>
+	<key>TSKConfiguration</key>
+	<dict>
+		<key>TSKPinnedDomains</key>
+		<dict>
+			<key>linkedin.com</key>
+			<dict>
+				<key>TSKIncludeSubdomains</key>
+				<true/>
+				<key>TSKEnforcePinning</key>
+				<true/>
+				<key>TSKExpirationDate</key>
+				<string>2025-03-11</string>
+				<key>TSKPublicKeyAlgorithms</key>
+				<array>
+					<string>TSKPublicKeyAlgorithmRsa2048</string>
+				</array>
+				<key>TSKPublicKeyHashes</key>
+				<array>
+					<string>EHSd7ii9pLmC8hB+sB54aZjg3yPZz6vREeP0FIhjlvA=</string>
+					<string>5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w=</string>
+				</array>
+			</dict>
+		</dict>
+		<key>TSKSwizzleNetworkDelegates</key>
+		<false/>
+	</dict>
+</dict>
+</plist>
